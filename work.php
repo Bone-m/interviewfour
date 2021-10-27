@@ -1,4 +1,4 @@
-<?php require_once 'include/functions.php'; ?>
+<?php require_once 'include/db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,7 +108,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Оформление заказа</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <!-- //Close - error -->
+                    <button type="button" class="btn-close" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="buy" method="post">
@@ -139,13 +140,24 @@
                             <input type="text" name="product" class="form-control" id="product" readonly>
                         </div>
 
+                        <!-- <div class="form-group">
+                            <label for="date"> Выберие период доставки</label>
+                            <input type="date" name="wihtdate" class="form-control" id="date(DATE_RFC822)">
+                            <input type="date" name="ondate" class="form-control" id="date(DATE_RFC822)">
+                        </div> -->
+                        <!-- дни недели питания (с пн по вскр, можно выбрать любое сочетание дней) -->
+                        <!-- <div class="form-group">
+                            <label for="date"> Выберие дни недели питания</label>
+                            <input type="date" name="dateweek" class="form-control" id="date(DATE_RFC822)">
+                        </div> -->
+                        <!-- комментарий -->
                         <div class="form-group">
-                            <label for="date"> Время и дата заказа <? echo date(DATE_RFC822); ?></label>
-                            <input type="date" name="date" class="form-control" id="date(DATE_RFC822)">
+                            <label for="text"> Введите комментарий</label>
+                            <input type="text" name="text" class="form-control" id="Введите комментарий!">
                         </div>
                         <div class="form-group">
                             <label for="price">Цена выбранного товара </label>
-                            <input type="text" name="price" class="form-control" id="price" readonly>
+                            <input type="price" name="price" class="form-control" id="price" readonly>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Купить</button>
