@@ -56,7 +56,7 @@
                         <input type="price" name="price" class="form-control" id="price" readonly>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Купить</button>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
                 </form>
             </div>
         </div>

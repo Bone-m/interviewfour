@@ -2,8 +2,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
     <div class="container-fluid">
-        <div class="bd-brand-item w-50 p-1">
-            <div class="h2">Рационы питания</div>
+        <div class="bd-brand-item w-45 p-8">
+            <div class="h2">Рационы Питания</div>
         </div>
 
 
@@ -14,13 +14,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная страница </a>
+                    <a class="nav-link " aria-current="page" href="work.php">Главная страница </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">О компании</a>
+                    <a class="nav-link" aria-current="page" href="slimming.php">Похудение</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Отзывы</a>
+                    <a class="nav-link" aria-current="page" href="healthpromotion.php">Укрепления здоровья</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="stock.php">Акции</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="reviews.php">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="reg.php">Личный кабинет</a>
                 </li>
             </ul>
         </div>
