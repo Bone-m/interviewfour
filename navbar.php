@@ -29,7 +29,7 @@
                     <a class="nav-link" aria-current="page" href="reviews.php">Отзывы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="reg.php">Личный кабинет</a>
+                    <a class="nav-link" aria-current="page" href="login.php">Личный кабинет</a>
                 </li>
             </ul>
         </div>

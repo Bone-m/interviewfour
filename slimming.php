@@ -12,7 +12,7 @@
 
 </head>
 
-<body bgcolor="#c0c0c0" background="img/1.jpg" bgproperties="fixed">
+<body bgcolor="black" background="img/11.jpg" bgproperties="fixed">
     <div><?php include_once 'navbar.php' ?>
         <?php include_once 'cards.php' ?></div>
 

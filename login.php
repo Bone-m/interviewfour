@@ -1,4 +1,6 @@
+<meta charset="utf-8">
 <?php require_once 'include/db.php';
+
 session_start();
 ?>
 <!DOCTYPE html>
@@ -16,18 +18,31 @@ session_start();
 
 </head>
 
+<body>
+    <form action="" method="POST">
+        <input name="login">
+        <input name="password" type="password">
+        <input type="submit">
+    </form>
+    <?php
 
-<body bgcolor="black" background="img/11.jpg" bgproperties="fixed">
+    $host = 'localhost'; // имя хоста
+    $user = 'root';      // имя пользователя
+    $pass = '';          // пароль
+    $name = 'mydb';      // имя базы данных
+    $name = 'workweb';      // имя базы данных
+    $db_table = "users"; // Имя Таблицы БД
+    $link = mysqli_connect($host, $user, $pass, $name);
+    mysqli_query($link, "SET NAMES 'utf8'");
 
-    <a class="nav-link" aria-current="page" href="exz1.php">
-        <div class="card" style="width: 18rem;">
-            <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h1 class="card-title">Задание</h1>
-                <p class="price text-danger"> Просмотреть </p>
-            </div>
-        </div>
-    </a>
+
+    $query = 'SELECT * FROM users';
+    $result = mysqli_query($link, $query) or die(mysqli_error($link));
+    $row = mysqli_fetch_assoc($result);
+    var_dump($row);
+
+
+    ?>
 
 </body>
 

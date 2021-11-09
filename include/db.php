@@ -40,7 +40,8 @@ if (
             'price' => $price, 'text' => $text
         );
         // Подготавливаем SQL-запрос (wihtdate, ondate, dateweek,)( :wihtdate, :ondate, :dateweek, )
-        $query = $db->prepare("INSERT INTO $db_table (surname, name, patronymic, phone, email,  product,  price, text) values (:surname, :name, :patronymic, :phone,  :email, :product,  :price,  :text)");
+        $query = $db->prepare("INSERT INTO $db_table (surname, name, patronymic, phone, email,  product,  price, text) 
+        values (:surname, :name, :patronymic, :phone,  :email, :product,  :price,  :text)");
         // Выполняем запрос с данными
         $query->execute($data);
         // Запишим в переменую, что запрос отрабтал

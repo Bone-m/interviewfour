@@ -13,30 +13,3 @@
     padding: 8px 12px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
 }
-
-body {
-    /* Местоположение фоновой картинки */
-    background-image: url(img/1.jpg);
-    /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
-    background-position: center center;
-    /* Фон не повторяется */
-    background-repeat: no-repeat;
-    /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
-    background-attachment: fixed;
-    /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
-    background-size: cover;
-    /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
-    background-color: #464646;
-}
-
-.container6 {
-    background: #333 url(bg.jpg) no-repeat 50% 50%;
-}
-.rreg {
-    margin: 20px 0;
-    width: 15em;
-    border: 5px solid #333;
-    box-shadow: 8px 8px 5px #444;
-    padding: 8px 12px;
-    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
-}

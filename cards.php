@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="card" style="width: 18rem;">
-                <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
+                <img src="img/2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Рацион питания 1</h5>
                     <p class="card-text">Период доставки. Расписание доставки (варианты: ежедневная, доставка через день на один день питания, доставка через день на 2 дня питания). </p>
@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
+                <img src="img/3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Рацион питания 2</h5>
                     <p class="card-text">Период доставки. Расписание доставки (варианты: ежедневная, доставка через день на один день питания, доставка через день на 2 дня питания). </p>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
+                <img src="img/4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Рацион питания 3</h5>
                     <p class="card-text">Период доставки. Расписание доставки (варианты: ежедневная, доставка через день на один день питания, доставка через день на 2 дня питания). </p>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
+                <img src="img/5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Рацион питания 4</h5>
                     <p class="card-text">Период доставки. Расписание доставки (варианты: ежедневная, доставка через день на один день питания, доставка через день на 2 дня питания). </p>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
+                <img src="img/6.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Рацион питания 5</h5>
                     <p class="card-text">Период доставки. Расписание доставки (варианты: ежедневная, доставка через день на один день питания, доставка через день на 2 дня питания). </p>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://dummyimage.com/400x400/00ffbb/ffffff" class="card-img-top" alt="...">
+                <img src="img/7.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Рацион питания 6</h5>
                     <p class="card-text">Период доставки. Расписание доставки (варианты: ежедневная, доставка через день на один день питания, доставка через день на 2 дня питания). </p>
