@@ -1,8 +1,6 @@
-<?php
-require_once 'include/dbLogin.php';
+<?php require_once 'include/db.php';
 session_start();
 ?>
-<meta charset="utf-8">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,22 +10,40 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Web application</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <?php include_once 'navbar.php' ?>
 
 </head>
 
-<body>
-    <div class=container4>
-        <h1> Форма для регистрации!</h1>
 
-    </div>
-    <form action="" method="POST">
-        <input name="login" type="login">
-        <input name="password" type="password">
-        <input type="submit">
-    </form>
+<body bgcolor="black" background="img/11.jpg" bgproperties="fixed">
+
+    <?php
+    $conn = new mysqli("localhost", "root", "mypassword", "testdb2");
+    if ($conn->connect_error) {
+        die("Ошибка: " . $conn->connect_error);
+    }
+    $sql = "SELECT * FROM Users";
+    if ($result = $conn->query($sql)) {
+        $rowsCount = $result->num_rows; // количество полученных строк
+        echo "<p>Получено объектов: $rowsCount</p>";
+        echo "<table><tr><th>Id</th><th>Имя</th><th>Возраст</th></tr>";
+        foreach ($result as $row) {
+            echo "<tr>";
+            echo "<td>" . $row["id"] . "</td>";
+            echo "<td>" . $row["name"] . "</td>";
+            echo "<td>" . $row["age"] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+        $result->free();
+    } else {
+        echo "Ошибка: " . $conn->error;
+    }
+    $conn->close();
+    ?>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
